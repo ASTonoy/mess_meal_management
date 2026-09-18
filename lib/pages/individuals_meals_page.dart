@@ -151,7 +151,6 @@ class _IndividualMealsPageState extends State<IndividualMealsPage> {
 
                       List<Map<String, dynamic>> memberSummary = [];
                       for (int i = 0; i < widget.totalPerson; i++) {
-                        // 2. Fixed list names using leading underscores (_mealControllers, _moneyControllers, _nameControllers)
                         double individualMeal = double.tryParse(_mealControllers[i].text) ?? 0.0;
                         double individualMoney = double.tryParse(_moneyControllers[i].text) ?? 0.0;
                         double mealCost = individualMeal * mealRate;
